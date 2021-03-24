@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/GreenCubeIO/gpayments/compare/v0.1.6...v0.1.7) (2021-03-24)
+
+
+### Bug Fixes
+
+* make build include .d.ts files ([3107f37](https://github.com/GreenCubeIO/gpayments/commit/3107f37dd9171a2bf944f32652413cb89f6e7413))
+
 ### [0.1.6](https://github.com/GreenCubeIO/gpayments/compare/v0.1.5...v0.1.6) (2021-03-24)
 
 

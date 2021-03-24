@@ -11,7 +11,8 @@
     "test": "xo && mocha",
     "build": "npm run clean && ./node_modules/.bin/babel src -d lib",
     "prepare": "npm run build",
-    "clean": "rm -rf lib/"
+    "clean": "rm -rf lib/",
+    "release": "standard-version"
   },
   "repository": "cayasso/gpayments",
   "license": "MIT",
@@ -26,6 +27,7 @@
     "mocha": "^4.0.1",
     "pre-commit": "1.2.2",
     "should": "^13.1.3",
+    "standard-version": "^9.1.1",
     "xo": "^0.18.2"
   },
   "pre-commit": [

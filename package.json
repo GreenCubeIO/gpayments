@@ -14,7 +14,7 @@
     "clean": "rm -rf lib/",
     "release": "standard-version"
   },
-  "repository": "cayasso/gpayments",
+  "repository": "GreenCubeIO/gpayments",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.1"

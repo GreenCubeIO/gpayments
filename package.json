@@ -2,17 +2,17 @@
   "name": "@GreenCubeIO/gpayments",
   "version": "0.1.11",
   "description": "Simple 4Geeks Payments API wrapper for NodeJS.",
-  "main": "./lib/index",
+  "main": "./dist/index",
   "author": {
     "name": "Jonathan Brumley",
     "email": "cayasso@gmail.com"
   },
   "scripts": {
     "test": "xo && mocha",
-    "build": "npm run clean && ./node_modules/.bin/babel src -d lib && cp ./src/*.d.ts ./lib/",
+    "build": "npm run clean && ./node_modules/.bin/babel src -d dist && cp ./src/*.d.ts ./dist/",
     "prepare": "npm run build",
-    "clean": "rm -rf lib/",
-    "release": "standard-version"
+    "clean": "rm -rf dist/",
+    "release": "yarn build && git add dist && git commit -m \"chore: build dist\" && standard-version"
   },
   "repository": "GreenCubeIO/gpayments",
   "license": "MIT",

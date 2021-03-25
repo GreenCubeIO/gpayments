@@ -12,7 +12,7 @@ const onError = error => (error.response && error.response.data)
 
 const methods = ['get', 'put', 'post', 'patch', 'delete']
 
-module.exports = ({ clientId = CLIENT_ID, clientSecret = CLIENT_SECRET } = {}) => {
+module.exports = ({ clientId, clientSecret } = { clientId: CLIENT_ID, clientSecret: CLIENT_SECRET }) => {
   assert(clientId, 'Client ID is missing. Please pass a clientId as parameter or set the GPAYMENTS_CLIENT_ID environment variable.')
   assert(clientSecret, 'Client secret is missing. Please pass a clientSecret as parameter or set the GPAYMENTS_CLIENT_SECRET environment variable.')
 

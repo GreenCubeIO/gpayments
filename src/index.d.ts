@@ -58,7 +58,7 @@ interface GPaymentsSubscriptions<T = any> {
   fetch: (id: string | undefined) => Promise<T>;
 }
 
-type GPaymentsInstance = (options: GPaymentsOptions) => {
+type GPaymentsInstance = (options?: GPaymentsOptions) => {
   me: GPaymentsMe;
   plans: GPaymentsPlans;
   charges: GPaymentsCharges;

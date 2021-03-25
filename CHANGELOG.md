@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/GreenCubeIO/gpayments/compare/v0.1.9...v0.1.10) (2021-03-25)
+
+
+### Bug Fixes
+
+* ability to use env vars as default config ([157f7c1](https://github.com/GreenCubeIO/gpayments/commit/157f7c1a259d58565ff9de6efff7062bcab67078))
+
 ### [0.1.9](https://github.com/GreenCubeIO/gpayments/compare/v0.1.8...v0.1.9) (2021-03-25)
 
 

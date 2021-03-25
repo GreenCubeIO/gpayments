@@ -1,6 +1,6 @@
 interface GPaymentsOptions {
-  clientId: string;
-  clientSecret: string;
+  clientId?: string;
+  clientSecret?: string;
 }
 
 interface GPaymentsMe<T = any> {

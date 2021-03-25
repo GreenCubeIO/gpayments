@@ -1,6 +1,6 @@
 {
   "name": "@GreenCubeIO/gpayments",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Simple 4Geeks Payments API wrapper for NodeJS.",
   "main": "./dist/index",
   "author": {

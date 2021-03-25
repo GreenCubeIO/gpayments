@@ -1,21 +1,21 @@
-interface GPaymentsOptions {
+export interface GPaymentsOptions {
   clientId?: string;
   clientSecret?: string;
 }
 
-interface GPaymentsMe<T = any> {
+export interface GPaymentsMe<T = any> {
   fetch: () => Promise<T>;
   update: (data: T) => Promise<T>;
 }
 
-interface GPaymentsCustomers<T = any> {
+export interface GPaymentsCustomers<T = any> {
   create: (data: T) => Promise<T>;
   fetch: (key: string | undefined) => Promise<T>;
   update: (key: string, data: T) => Promise<T>;
   remove: (key: string) => Promise<T>;
 }
 
-interface GPaymentsChargeResponse {
+export interface GPaymentsChargeResponse {
   refund_id?: string;
   charge_id: string;
   customer: null | string;
@@ -41,18 +41,18 @@ interface GPaymentsChargeResponse {
   test: boolean;
 }
 
-interface GPaymentsCharges<T = any> {
+export interface GPaymentsCharges<T = any> {
   create: (data: T) => Promise<GPaymentsChargeResponse>;
   logs: (id: string | undefined) => T;
 }
 
-interface GPaymentsPlans<T = any> {
+export interface GPaymentsPlans<T = any> {
   fetch: (key: string | undefined) => Promise<T>;
   create: (data: T) => Promise<T>;
   remove: (key: string) => Promise<T>;
 }
 
-interface GPaymentsSubscriptions<T = any> {
+export interface GPaymentsSubscriptions<T = any> {
   subscribe: (data: T) => Promise<T>;
   unsubscribe: (id: string) => Promise<T>;
   fetch: (id: string | undefined) => Promise<T>;

@@ -11,7 +11,7 @@
     "test": "xo && mocha",
     "build": "yarn clean && ./node_modules/.bin/babel src -d dist && cp ./src/*.d.ts ./dist/",
     "clean": "rm -rf dist/",
-    "release": "yarn build && git add dist && git commit -m \"chore: build dist\" && standard-version"
+    "release": "yarn build && git add dist && git commit -m \"chore: build dist\"; standard-version"
   },
   "repository": "GreenCubeIO/gpayments",
   "license": "MIT",
